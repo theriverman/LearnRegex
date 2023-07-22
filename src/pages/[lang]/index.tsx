@@ -8,12 +8,10 @@ import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 import Section from 'src/components/Section';
 import IntlLink from 'src/components/IntlLink';
-import SupportButton from 'src/components/SupportButton';
 import HighlightedText from 'src/components/HighlightedText';
 import Button, { ButtonVariants } from 'src/components/Button';
 import ProductHuntBadges from 'src/components/ProductHuntBadges';
 
-import sponsors from 'sponsors.json';
 import globalIntl from 'src/utils/globalIntl';
 
 const PageHome = () => {
@@ -104,31 +102,6 @@ const PageHome = () => {
           </a>
         )}
       />
-      <div className="w-full text-center mb-16 my-52">
-        <h3 className="text-neutral-300 text-md">
-          <FormattedMessage id="general.ourSponsors" />
-        </h3>
-        <div className="flex gap-3 mt-2 items-center justify-center max-w-lg mx-auto bg-gradient-to-r from-green-50/0 via-neutral-500/30 to-green-50/0 h-16">
-          {sponsors.map(sponsor => (
-            <a
-              key={sponsor.name}
-              href={sponsor.url}
-              target="_blank"
-              rel="noreferrer"
-              className="opacity-70 hover:opacity-100 w-auto h-auto"
-            >
-              <img
-                src={sponsor.logo.url}
-                width={sponsor.logo.width}
-                height={sponsor.logo.height}
-                alt={sponsor.name}
-                title={sponsor.name}
-              />
-            </a>
-          ))}
-        </div>
-      </div>
-      <SupportButton />
       <Footer />
     </div>
   );

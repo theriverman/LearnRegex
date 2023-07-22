@@ -35,7 +35,7 @@ const ReportPlayground = () => {
   return (
     <a
       className="inline-flex items-center text-xs p-2 text-neutral-400 hover:text-neutral-300 transition-colors h-4"
-      href={`https://github.com/aykutkardas/regexlearn.com/issues/new?title=${title}&body=${body}`}
+      href={`https://github.com/theriverman/LearnRegex/issues/new?title=${title}&body=${body}`}
       target="_blank"
       rel="noreferrer"
     >

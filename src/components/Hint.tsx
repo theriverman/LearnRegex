@@ -3,6 +3,7 @@ import cx from 'clsx';
 import { Popover } from '@headlessui/react';
 import useEventListener from '@use-it/event-listener';
 import { FormattedMessage } from 'react-intl';
+import { useRouter } from 'next/router'
 
 import Shortcut from 'src/components/Shortcut';
 import shortcuts from 'src/shortcuts';
@@ -14,6 +15,9 @@ interface Props {
 }
 
 const Hint = ({ regex, flags, hiddenFlags }: Props) => {
+  const router = useRouter()
+  console.log(router.query);
+
   const popoverButtonRef = useRef<HTMLButtonElement>(null);
 
   const toggleShow = e => {
@@ -28,12 +32,14 @@ const Hint = ({ regex, flags, hiddenFlags }: Props) => {
 
   useEventListener('keyup', toggleShow);
 
+
+
   return (
     <Popover className="select-none cursor-pointer absolute right-2 top-1 md:top-auto md:bottom-1">
-      <Popover.Button ref={popoverButtonRef} className="flex flex-col items-end text-[10px]">
+      {/* <Popover.Button ref={popoverButtonRef} className="flex flex-col items-end text-[10px]">
         <Shortcut command={shortcuts.hint} />
         <FormattedMessage id="general.hintQuestion" />
-      </Popover.Button>
+      </Popover.Button> */}
 
       <Popover.Panel className="absolute w-32 text-center z-10 mt-2 p-2 border border-neutral-700 bg-neutral-800 shadow-md rounded-md">
         <div className="text-green-300 flex flex-col gap-3">

@@ -1,7 +1,7 @@
-# **🔓 [regexlearn.com](http://regexlearn.com/): Unlock the Secrets of Regex**
+# **🔓 LearnRegex: Unlock the Secrets of Regex**
 
 
-Embark on an exciting journey to learn and master regular expressions with **[regexlearn.com](https://regexlearn.com/)**. Our engaging, step-by-step approach and feature-rich platform ensure a smooth learning experience that will have you writing regex like a pro in no time!
+Embark on an exciting journey to learn and master regular expressions with **LearnRegex**. Our engaging, step-by-step approach and feature-rich platform ensure a smooth learning experience that will have you writing regex like a pro in no time!
 
 <br>
 
@@ -13,41 +13,6 @@ Embark on an exciting journey to learn and master regular expressions with **[re
 - **📚 Cheatsheet:** Keep a handy, concise summary of regex syntax and usage at your fingertips for quick reference.
 - **🔬 Playground:** Freely experiment and test your regex patterns in a dedicated sandbox environment without limitations.
 - **💡 Practice:** Coming soon - Challenge yourself with a wide range of practical exercises to refine and enhance your regex skills.
-
-<br>
-
-## **🌍 Supported Languages**
-
-**[regexlearn.com](http://regexlearn.com/)** is available in the following languages, with more on the way:
-
-- 🇺🇸 English
-- 🇹🇷 Turkish
-- 🇷🇺 Russian
-- 🇪🇸 Spanish
-- 🇨🇳 Chinese
-- 🇩🇪 German
-- 🇺🇦 Ukrainian
-- 🇫🇷 French
-- 🇰🇷 Korean [(Requested)](https://github.com/aykutkardas/regexlearn.com/issues/92)
-- 🇦🇪 Arabic [(Requested)](https://github.com/aykutkardas/regexlearn.com/issues/163)
-- 🇧🇷 Brazilian Portuguese [(Requested)](https://github.com/aykutkardas/regexlearn.com/issues/39)
-- 🇬🇪 Georgian [(Requested)](https://github.com/aykutkardas/regexlearn.com/issues/274)
-
-Interested in adding your language? Please **[create an issue](https://github.com/aykutkardas/regexlearn.com/issues/new)** and let us know!
-
-<br>
-
-## Our Sponsors
-
-[![Ahrefs](preview/ahrefs.png)](https://ahrefs.com/) [![Wope](preview/wope.png)](https://wope.com)
-
-<br>
-
-## **💖 Sponsorship**
-
-This project is a labor of love, developed as open-source during our free time. If you'd like to support our mission and be featured as a sponsor, please **[contact us](mailto:aykutkrds@gmail.com)**. Your generous contribution allows us to continue enhancing regexlearn.com, fostering growth and learning within the community.
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/aykutkardas)
 
 <br>
 

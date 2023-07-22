@@ -1,12 +1,14 @@
 import { FormattedMessage } from 'react-intl';
 import cx from 'clsx';
+import axios from 'axios';
 
 import Icon from 'src/components/Icon';
 import Logo from 'src/components/Logo';
 import IntlLink from 'src/components/IntlLink';
-import LanguageSelect from 'src/components/LanguageSelect';
 
 import packageInfo from 'package.json';
+
+let BaseAleidoUrl: string = process.env.ALEIDO_BASE_URL;
 
 interface Props {
   page?: 'home' | 'learn' | 'learn-detail' | 'cheatsheet' | 'playground';
@@ -43,19 +45,6 @@ const Header = ({ page }: Props) => {
             <FormattedMessage id="general.playground" />
           </IntlLink>
 
-          <a
-            href="https://github.com/aykutkardas/regexlearn.com"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="GitHub"
-            className={cx(
-              'text-neutral-200 hover:text-regreen-400',
-              'select-none relative items-baseline inline-flex justify-center',
-            )}
-          >
-            <Icon icon="github" size={18} />
-          </a>
-          <LanguageSelect />
         </div>
       </div>
     </header>

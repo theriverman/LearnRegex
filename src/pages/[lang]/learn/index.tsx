@@ -4,7 +4,6 @@ import { useIntl, FormattedMessage } from 'react-intl';
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
 import LessonBox from 'src/components/LessonBox';
-import SupportButton from 'src/components/SupportButton';
 import HighlightedText from 'src/components/HighlightedText';
 import { defaultLocale, locales } from 'src/localization';
 import globalIntl from 'src/utils/globalIntl';
@@ -40,11 +39,6 @@ const PageLearn = () => {
                 />
                 <a
                   className="text-xs flex items-center justify-end text-neutral-400 hover:text-neutral-100 relative ml-auto mt-2 mr-2"
-                  href={
-                    lesson.sponsorURL ||
-                    lesson.creatorURL ||
-                    'https://github.com/aykutkardas/regexlearn.com#sponsoring'
-                  }
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -59,7 +53,7 @@ const PageLearn = () => {
                       />
                     </span>
                   ) : (
-                    <span>Become a Sponsor</span>
+                    <span>.</span>
                   )}
                 </a>
               </div>
@@ -67,7 +61,6 @@ const PageLearn = () => {
           </div>
         </div>
       </div>
-      <SupportButton />
       <Footer />
     </div>
   );

@@ -3,7 +3,6 @@ import { FormattedMessage, useIntl } from 'react-intl';
 
 import Header from 'src/components/Header';
 import Footer from 'src/components/Footer';
-import SupportButton from 'src/components/SupportButton';
 import CheatsheetCollapse from 'src/components/CheatsheetCollapse';
 import { defaultLocale, locales } from 'src/localization';
 import globalIntl from 'src/utils/globalIntl';
@@ -39,7 +38,6 @@ const PageCheatsheet = () => {
           </div>
         ))}
       </div>
-      <SupportButton />
       <Footer />
     </div>
   );

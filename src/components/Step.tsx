@@ -89,7 +89,7 @@ const Step = () => {
             />
           </span>
         ) : (
-          <span>Become a Sponsor</span>
+          <p>.</p>
         )}
       </a>
       {data.videoURL && modalIsOpen && (
