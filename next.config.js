@@ -9,6 +9,10 @@ module.exports = {
         destination: '/en',
       },
       {
+        source: '/login',
+        destination: '/en/login',
+      },
+      {
         source: '/learn',
         destination: '/en/learn',
       },
@@ -31,6 +35,11 @@ module.exports = {
       {
         source: '/en',
         destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en/login',
+        destination: '/login',
         permanent: true,
       },
       {

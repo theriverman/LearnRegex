@@ -11,12 +11,17 @@ import packageInfo from 'package.json';
 let BaseAleidoUrl: string = process.env.ALEIDO_BASE_URL;
 
 interface Props {
-  page?: 'home' | 'learn' | 'learn-detail' | 'cheatsheet' | 'playground';
+  page?: 'home' | 'learn' | 'learn-detail' | 'cheatsheet' | 'playground' | 'login';
 }
 
 const Header = ({ page }: Props) => {
+  const isLoginPage = page === 'login';
   const isLearnDetail = page === 'learn-detail';
   const isPlaygroundPage = page === 'playground';
+
+  console.log("isLoginPage", isLoginPage);
+  console.log("isLearnDetail", isLearnDetail);
+  console.log("isPlaygroundPage", isPlaygroundPage);
 
   return (
     <header
@@ -35,6 +40,9 @@ const Header = ({ page }: Props) => {
         </div>
         {isLearnDetail && <div id="ProgressArea" className="flex justify-center flex-1" />}
         <div className="flex flex-1 items-center text-sm justify-end gap-2 sm:gap-4">
+        <IntlLink className="hidden md:block" navLink href="/[lang]/login">
+            <FormattedMessage id="general.login" />
+          </IntlLink>
           <IntlLink className="hidden md:block" navLink href="/[lang]/learn">
             <FormattedMessage id="general.learn" />
           </IntlLink>
@@ -44,7 +52,6 @@ const Header = ({ page }: Props) => {
           <IntlLink className="hidden md:block" navLink href="/[lang]/playground">
             <FormattedMessage id="general.playground" />
           </IntlLink>
-
         </div>
       </div>
     </header>

@@ -10,7 +10,6 @@ import Section from 'src/components/Section';
 import IntlLink from 'src/components/IntlLink';
 import HighlightedText from 'src/components/HighlightedText';
 import Button, { ButtonVariants } from 'src/components/Button';
-import ProductHuntBadges from 'src/components/ProductHuntBadges';
 
 import globalIntl from 'src/utils/globalIntl';
 
@@ -43,10 +42,6 @@ const PageHome = () => {
             alt={formatMessage({ id: 'landing.imageAltText' })}
           />
         </div>
-      </div>
-
-      <div className="max-w-lg mx-auto bg-gradient-to-r from-green-50/0 via-green-500/30 to-green-50/0 flex items-center justify-center h-[60px] relative -top-[110px]">
-        <ProductHuntBadges />
       </div>
 
       <Section
@@ -88,19 +83,6 @@ const PageHome = () => {
         imageAltText="section.opensource.imageAltText"
         link="https://github.com/aykutkardas/regexlearn.com"
         reverse
-        customButton={() => (
-          <a
-            href="https://github.com/aykutkardas/regexlearn.com"
-            target="_blank"
-            rel="noreferrer"
-            tabIndex={-1}
-          >
-            <Button className="inline-flex items-center justify-center bg-neutral-600 hover:bg-neutral-700 mt-4">
-              <Icon icon="github" size={16} color="white" className="mr-2" />
-              <span>GitHub</span>
-            </Button>
-          </a>
-        )}
       />
       <Footer />
     </div>

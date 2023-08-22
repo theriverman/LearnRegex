@@ -21,6 +21,6 @@
   "section.practice.imageAltText": "Illustration of a woman taking notes from a book.",
 
   "section.opensource.title": "Open Source",
-  "section.opensource.content": "Regex Learn is an open-source project that welcomes community contributions and is free to use. Working on this project allows you to hone your skills, study, and collaborate.  You can contribute & support here.",
+  "section.opensource.content": "LearnRegex is a private fork of the open source RegexLearn project. LearnRegex has been customised for Aleido by adding user-level authentication and certificate generation upon successfully finishing the course.",
   "section.opensource.imageAltText": "Illustration of a woman, a man, and a cat putting together puzzle pieces."
 }
